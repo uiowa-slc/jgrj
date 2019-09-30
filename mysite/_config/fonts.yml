@@ -1,0 +1,9 @@
+---
+Name: mywebfonts
+---
+gorriecoe\Webfonts\View\Webfonts:
+  GoogleFonts:
+    - 'Cormorant Garamond'
+    - 'Cormorant Garamond:bold'
+    - 'Roboto Condensed'
+    - 'Roboto Condensed:bold'
