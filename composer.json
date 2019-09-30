@@ -17,6 +17,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/deploy-helper"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
         },
         {
@@ -64,5 +68,4 @@
             "web.config"
         ]
     }
-
 }
