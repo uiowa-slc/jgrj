@@ -120,7 +120,6 @@ function scripts(){
       './themes/jgrj/src/scripts/app.js',
 
     ])
-      .pipe($.newer('.tmp/scripts'))
       .pipe($.sourcemaps.init())
       .pipe($.babel())
       .pipe($.sourcemaps.write())
