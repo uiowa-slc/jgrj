@@ -1,6 +1,11 @@
 <article>
-	<div class="article-header">
-	  <h1><a href="$Link">$Title</a></h1>
-	  <% if $Date %><p class="smallcaps subheader">$Date</p><% end_if %>
+	<div class="">
+		<h3><a href="$Link">$Title</a></h3>
+		<% if $Date %>
+			<p class="smallcaps subheader">$Date</p>
+		<% end_if %>
+		<% loop Children %>
+			$Title
+		<% end_loop %>
 	</div>
 </article>

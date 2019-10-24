@@ -1,4 +1,4 @@
-<p class="blog-post-meta text-muted"><small>
+<p class="blog-post-meta"><small>
     <% if $Categories.exists %>
         <%t SilverStripe\\Blog\\Model\\Blog.PostedIn "Posted in" %>
         <% loop $Categories %>
@@ -21,7 +21,7 @@
     <% end_if %>
 
     <%t SilverStripe\\Blog\\Model\\Blog.Posted "Posted" %>
-    <a href="$MonthlyArchiveLink">$PublishDate.ago</a>
+    $PublishDate.format("MMMM d, y")
 
     <% if $Credits %>
         <%t SilverStripe\\Blog\\Model\\Blog.By "by" %>

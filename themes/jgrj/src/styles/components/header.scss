@@ -1,0 +1,21 @@
+.header {
+	background-color: #fff;
+	padding: 4px 0;
+	margin-bottom: 3em;
+}
+.header.stuck {
+	@include media-breakpoint-down(md) {
+		position: relative;
+	}
+}
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar .nav-link {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.navbar-brand {
+	font-family: $headings-font-family;
+}

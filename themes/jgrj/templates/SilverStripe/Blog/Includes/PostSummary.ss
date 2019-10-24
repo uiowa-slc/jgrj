@@ -1,17 +1,20 @@
 <div class="post-summary">
 	<h2>
 		<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
-			<% if $MenuTitle %>$MenuTitle
-			<% else %>$Title<% end_if %>
+			<% if $MenuTitle %>
+				$MenuTitle
+			<% else %>
+				$Title
+			<% end_if %>
 		</a>
 	</h2>
 
 	<p class="post-image">
 		<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
 			<% if $FeaturedImage %>
-				$FeaturedImage.Fill(1080,400)
+				<img src="$FeaturedImage.Fill(400,300).URL" alt=""/>
 			<% else %>
-				$Parent.FeaturedImage.Fill(950,400)
+				$Parent.FeaturedImage.Fill(400,300)
 			<% end_if %>
 		</a>
 	</p>
@@ -23,11 +26,11 @@
 	<% else %>
 		<p>$Excerpt</p>
 	<% end_if %>
-	    <p>
-			<a class="btn btn-primary" href="$Link">
-				<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>
-			</a>
-		</p>
+    <p>
+		<a class="btn btn-primary" href="$Link">
+			<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>
+		</a>
+	</p>
 
 </div>
 <hr />

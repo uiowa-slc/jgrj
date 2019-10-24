@@ -12,6 +12,9 @@ PageController:
 Article:
   extensions:
     - ArticleWordExtension
+BlogPost:
+  extensions:
+    - BlogPostExtension
 VersionTruncator:
   version_limit: 1
   draft_limit: 1

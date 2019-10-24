@@ -1,9 +1,8 @@
 <% include Header %>
 
-
 <div class="container">
 	<div class="row">
-		<div class=" col-sm px-lg-0 content-container" role="main">
+		<div class="col-md-8" role="main">
 			<article>
 				<h1>$Title</h1>
 				<div class="content">$Content</div>

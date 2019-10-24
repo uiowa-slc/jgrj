@@ -2,17 +2,19 @@
 
 
 <div class="container">
-    <div class="row flex-align-center">
-        <div class=" col-sm px-lg-9 content-container" role="main">
+    <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
             <article>
-                <h1>$ArticleTitle.RAW</h1>
-                <% include ArticleByline %>
+                <header class="py-5 text-center" >
+                    <h1 class="">$ArticleTitle.RAW</h1>
+                    <% include ArticleByline %>
+                </header>
 
-                <div class="bigtext">
+                <div class="article__content">
                     $Content
                 </div>
-            
-    
+
+
                 <% if $Tags %>
                     <p>
                         <% loop $Tags %>
@@ -31,7 +33,7 @@
                     </div>
                 <% end_if %>
 
-                
+
                 <div class="footnotes">
                     <ol>
                         <% loop $Footnotes %>

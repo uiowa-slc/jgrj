@@ -7,6 +7,8 @@
 $gold: #ffcd00;
 $highlight: $gold;
 
+$body-bg: #f8f6f3;
+$body-color: #343a40;
 
 // Grid breakpoints
 //
@@ -18,7 +20,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1300px
+  xl: 1200px
 );
 
 
@@ -30,17 +32,19 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1300px
+  xl: 1200px
 );
 
 
 // Fonts
 $enable-responsive-font-sizes: true;
-$font-family-base: "Roboto Condensed",sans-serif;
-$headings-font-family: "Cormorant Garamond",sans-serif;
+$font-family-base: "Roboto",sans-serif;
+$headings-font-family: "Lora",serif;
 $font-size-base: 1.1rem;
-$headings-font-weight: 600;
-
+$headings-font-weight: 400;
+$line-height-base: 1.6;
+$headings-line-height: 1.3;
+$lead-font-size: $font-size-base * 1.35;
 
 // Jumbotron
 $jumbotron-padding: 6rem;
@@ -53,5 +57,6 @@ $spacers: (
   6: ($spacer * 4.5),
   7: ($spacer * 6),
   8: ($spacer * 9),
-  9: ($spacer * 12)
+  9: ($spacer * 12),
+  10: ($spacer * 15)
 )
