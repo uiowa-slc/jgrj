@@ -4,6 +4,7 @@ Name: mywebfonts
 gorriecoe\Webfonts\View\Webfonts:
   GoogleFonts:
     - 'Lora'
+    - 'Lora:italic'
     - 'Roboto'
     - 'Roboto:bold'
     - 'Roboto:italic'

@@ -2,32 +2,17 @@
 
 <main class="container">
 
-	<!-- Background Image Feature -->
-	<% if $BackgroundImage %>
-		<% include FeaturedImage %>
-	<% end_if %>
-
-	<%-- $Breadcrumbs --%>
-	<% if not $BackgroundImage %>
-		<div class="row">
-			<div class="col">
-				<div class="pt-5">
-					<h1>$Title</h1>
-				</div>
-			</div>
-		</div>
-	<% end_if %>
-
 	$BeforeContent
 
-	<div class="row justify-content-center">
+	<div class="row">
 
-		<article class=" <% if not $HideLinksToStaffPages %>col-lg-12<% else %>col-lg-12<% end_if %>">
+		<article class=" <% if not $HideLinksToStaffPages %>col-lg-8<% else %>col-lg-12<% end_if %>">
 
 
 			$BeforeContentConstrained
 
-			<div class="">
+			<div class="mt-5">
+				<h1>$Title</h1>
 				$Content
 				<div class="stafflist">
 					<% if $Teams %>
@@ -57,12 +42,11 @@
 			$AfterContentConstrained
 			$Form
 		</article>
-		<%-- <aside class="col-lg-3">
-			<% if not $HideLinksToStaffPages %>
-				<% include SideNav %>
+		<% if not $HideLinksToStaffPages %>
+			<% if $Menu(2) %>
+				<% include SideBar %>
 			<% end_if %>
-			$Sidebar
-		</aside> --%>
+		<% end_if %>
 	</div>
 
 	$AfterContent

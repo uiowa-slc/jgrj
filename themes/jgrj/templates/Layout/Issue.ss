@@ -3,35 +3,27 @@
 
 <div class="container">
     <div class="row">
-        <div class=" col-sm px-lg-0 content-container" role="main">
-            <article>
-                <h1 class="display-4">$Title</h1>
-                <div class="content">$Content</div>
-                <%--<% include MagnificExample %> -- %>
-                <%-- <% include SlideshowExample %> --%>
-                <%-- <% include ContentExample %> --%>
-            </article>
+        <div class="col-sm-12" role="main">
+            <div class="mt-5">
 
+                <h1 class="display-4 text-center">
+                    Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %>
+                </h1>
 
-        <a href="$Parent.Link" class="featured-tag">$Parent.MenuTitle</a>
-        <h1>Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %></h1>
-        <h2>$Date</h2>
+                <h6 class="text-center">$Date</h6>
 
+                <hr />
 
-        <% loop $Children %>
-          <div>
-          <% include ArticleCard %>
-          </div>
-        <% end_loop %>
+                <div class="article-cardholder mt-5">
+                <% loop $Children %>
+                        <% include ArticleCard %>
+                <% end_loop %>
+                 </div>
 
-
-            $Form
-            $PageComments
-
+                $Form
+                $PageComments
+            </div>
         </div>
-        <% if $Menu(2) || $SideBarView.Widgets %>
-            <% include SideBar %>
-        <% end_if %>
     </div>
 </div>
 

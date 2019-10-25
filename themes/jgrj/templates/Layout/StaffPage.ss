@@ -2,25 +2,19 @@
 
 <main class="container">
 	<%-- $Breadcrumbs --%>
-	<div class="row">
-		<div class="col">
-			<div class="pt-5">
-				<h1>$Title</h1>
-				<hr />
-			</div>
-		</div>
-	</div>
+
 
 	$BeforeContent
 
 	<div class="row">
 
-		<article class="col-lg-9">
+		<article class="col-lg-8">
 
 			$BeforeContentConstrained
 
 			<div class="">
 				<div class="staffpage">
+					<h1>$Title</h1>
 					<% if $Photo %>
 						<img src="$Photo.ScaleWidth(945).URL" alt="$Title" role="presentation" class="staffpage__img">
 					<% end_if %>
@@ -50,9 +44,8 @@
 				</div>
 				$Content
 		</article>
-		<aside class="col-lg-3">
-			<% include SideNav %>
-			$Sidebar
-		</aside>
+		<% if $Menu(2) %>
+			<% include SideBar %>
+		<% end_if %>
 	</div>
 </main>

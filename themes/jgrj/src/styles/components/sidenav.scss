@@ -2,7 +2,7 @@
 Subnavigation
 --------------------------------------------------------------- */
 .sidenav {
-	padding: 3rem 2rem;
+	padding: 3rem 1rem;
 	background: #fff;
 	position: relative;
 	border-left: 5px solid $gray-900;
@@ -44,13 +44,18 @@ Subnavigation
 		}
 		&--sub {
 			text-transform: none;
-			font-size: 14px;
+			font-size: 13px;
 			line-height: 1.4;
 		}
 		&:hover, &:focus {
 			color: $gray-800;
 			text-decoration: underline;
 		}
+	}
+	@include media-breakpoint-up(lg) {
+		padding: 3rem 2rem;
+		position: sticky;
+		top: 100px;
 	}
 }
 

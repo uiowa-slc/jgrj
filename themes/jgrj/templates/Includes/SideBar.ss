@@ -1,6 +1,6 @@
-<aside class="col-md-3 offset-md-1" role="complementary">
+<aside class="col-lg-4 col-xl-3 offset-xl-1" role="complementary">
 	<% if Menu(2) %>
-		<nav class="sidenav">
+		<nav class="sidenav mt-5">
 			<% if Menu(2) %>
 				<% with Level(1) %>
 					<h3 class="sidenav__title">
