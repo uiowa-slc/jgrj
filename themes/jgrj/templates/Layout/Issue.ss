@@ -14,14 +14,15 @@
 
                 <hr />
 
-                <div class="article-cardholder mt-5">
-                <% loop $Children %>
-                        <% include ArticleCard %>
-                <% end_loop %>
+                <div class="article-cardholder mt-6">
+                    <% loop $Children %>
+                            <% include ArticleCard %>
+                    <% end_loop %>
                  </div>
 
                 $Form
                 $PageComments
+
             </div>
         </div>
     </div>
