@@ -23,6 +23,8 @@
                 $Form
                 $PageComments
 
+                <% include Volumes %>
+
             </div>
         </div>
     </div>
