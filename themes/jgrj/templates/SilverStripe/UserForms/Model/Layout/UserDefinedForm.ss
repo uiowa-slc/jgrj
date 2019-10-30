@@ -1,20 +1,18 @@
-<div class="container typography">
-	<% include Banner %>
+<% include Header %>
 
+<div class="container">
 	<div class="row">
-		<% if $Menu(2) || $SideBarView.Widgets %>
+		<div class="col-lg-8" role="main">
+			<article class="mt-5">
+				<h1>$Title</h1>
+				<div class="content">$Content</div>
+			</article>
+			$Form
+			$PageComments
+
+		</div>
+		<% if $Menu(2) %>
 			<% include SideBar %>
 		<% end_if %>
-		<div class="col-sm content" role="main">
-			<div class="row">
-				<div class="col-sm-6">
-					$Content
-				</div>
-				<div class="col-sm-6">
-					$Form
-				</div>
-			</div>
-			$PageComments
-		</div>
 	</div>
 </div>

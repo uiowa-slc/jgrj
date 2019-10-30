@@ -1,11 +1,12 @@
 <%-- NOTE: Before including this, you will need to wrap the include in a with block  --%>
 
 <% if $MoreThanOnePage %>
-	<ul class="pagination">
+
+	<ul class="pagination justify-content-center mt-6">
 		<% if $NotFirstPage %>
 			<li class="page-item">
 				<a class="page-link previous" aria-label="Previous" href="{$PrevLink}">
-					<span aria-hidden="true">&laquo;</span>
+					<span aria-hidden="true">Previous</span>
 				</a>
 			</li>
 		<% end_if %>
@@ -23,7 +24,7 @@
 		<% if $NotLastPage %>
 			<li class="page-item">
 				<a class="page-link next" href="{$NextLink}" aria-label="Next">
-					<span aria-hidden="true">&raquo;</span>
+					<span aria-hidden="true">Next</span>
 				</a>
 			</li>
 		<% end_if %>

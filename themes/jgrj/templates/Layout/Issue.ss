@@ -10,7 +10,7 @@
                     Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %>
                 </h1>
 
-                <h6 class="text-center">$Date</h6>
+                <h6 class="text-center"><em>$Date</em></h6>
 
                 <hr />
 
@@ -23,9 +23,15 @@
                 $Form
                 $PageComments
 
-                <% include Volumes %>
-
+                <div class="text-divider">
+                    <span>Previous Volumes</span>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="row justify-content-lg-center">
+        <div class="col-lg-9 ">
+            <% include Volumes %>
         </div>
     </div>
 </div>

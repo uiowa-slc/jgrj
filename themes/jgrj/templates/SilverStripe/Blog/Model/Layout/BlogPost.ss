@@ -54,7 +54,7 @@
 						<li>
 							<% if PreviousPage %>
 								<h4 class="prev-next__title">
-									<a href="$PreviousPage.Link" class="">$PreviousPage.Title</a>
+									<a href="$PreviousPage.Link" class="link-highlight">$PreviousPage.Title</a>
 								</h4>
 								<p class="text-muted">
 									<small>
@@ -67,7 +67,7 @@
 						<li>
 							<% if NextPage %>
 								<h4 class="prev-next__title">
-									<a href="$NextPage.Link">$NextPage.Title</a>
+									<a href="$NextPage.Link" class="link-highlight">$NextPage.Title</a>
 								</h4>
 								<p class="text-muted">
 									<small>

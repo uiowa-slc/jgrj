@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="">
   <head>
     <% base_tag %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
     $MetaTags(false)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <% if $URLSegment = 'home' %>

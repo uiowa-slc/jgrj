@@ -1,36 +1,34 @@
-<div class="post-summary">
-	<h2>
-		<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
-			<% if $MenuTitle %>
-				$MenuTitle
-			<% else %>
-				$Title
-			<% end_if %>
-		</a>
-	</h2>
+<div class="col-md-6 col-lg-4">
+	<div class="card mb-4">
 
-	<p class="post-image">
-		<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
-			<% if $FeaturedImage %>
-				<img src="$FeaturedImage.Fill(400,300).URL" alt=""/>
-			<% else %>
-				$Parent.FeaturedImage.Fill(400,300)
-			<% end_if %>
-		</a>
-	</p>
+		<% if $FeaturedImage %>
+			<a href="$Link">
+				<img src="$FeaturedImage.Fill(400,300).URL" class="card-img-top" alt=""/>
+			</a>
+		<% end_if %>
 
-	<% include SilverStripe\\Blog\\EntryMeta %>
+		<div class="card-body">
+			<h5 class="card-title">
+				<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">$Title</a>
+			</h5>
+			<div class="card-text">
+				<% if $Summary %>
+					$Summary
+				<% else %>
+					<p>$Excerpt</p>
+				<% end_if %>
+				<% include SilverStripe\\Blog\\EntryMeta %>
 
-	<% if $Summary %>
-		$Summary
-	<% else %>
-		<p>$Excerpt</p>
-	<% end_if %>
-    <p>
-		<a class="btn btn-primary" href="$Link">
-			<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>
-		</a>
-	</p>
+			</div>
+		</div>
 
+
+		<%-- <p class="post-image">
+			<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
+				<% if $FeaturedImage %>
+					<img src="$FeaturedImage.Fill(400,300).URL" class="card-img-top" alt=""/>
+				<% end_if %>
+			</a>
+		</p> --%>
+	</div>
 </div>
-<hr />

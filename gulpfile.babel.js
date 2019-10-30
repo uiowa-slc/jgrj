@@ -116,7 +116,8 @@ function scripts(){
       './node_modules/@fortawesome/fontawesome-free/js/regular.js',
       './node_modules/lazysizes/lazysizes.js',
       './node_modules/flickity/dist/flickity.pkgd.js',
-      './node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+      './themes/jgrj/src/scripts/util.js',
+      './themes/jgrj/src/scripts/reveal.js',
       './themes/jgrj/src/scripts/app.js',
 
     ])

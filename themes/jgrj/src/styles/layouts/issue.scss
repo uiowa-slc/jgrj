@@ -17,13 +17,24 @@
 		color: $gray-600;
 	}
 	&__title {
-
 		& a {
 			color: $body-color;
+			text-decoration: underline;
 		}
 	}
 	&__text {
 		color: $gray-600;
 		font-size: 16px;
 	}
+	&__tags {
+		border-top: 1px solid $gray-200;
+		margin-top: 1em;
+		padding-top: 1em;
+	}
+}
+
+.tag {
+	color: $body-color;
+	font-size: 14px;
+	font-family: $headings-font-family;
 }

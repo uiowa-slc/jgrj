@@ -3,18 +3,42 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-8" role="main">
-            <article class="mt-5">
-                <h1>$Title</h1>
-                <% include Volumes %>
-            </article>
-            $Form
-            $PageComments
+        <div class="col-sm-12" role="main">
+            <div class="mt-5">
 
+                <% with $LatestIssue %>
+                    <h1 class="display-4 text-center">
+                       $Title
+                    </h1>
+
+                    <% if $Date %>
+                        <p class="smallcaps subheader">$Date</p>
+                    <% end_if %>
+
+                    <hr />
+
+                    <div class="article-cardholder mt-6">
+
+                        <% loop Children %>
+                            <% include ArticleCard %>
+                        <% end_loop %>
+                    </div>
+
+                <% end_with %>
+
+                $Form
+                $PageComments
+
+                 <div class="text-divider">
+                    <span>Previous Volumes</span>
+                </div>
+            </div>
         </div>
-        <% if $Menu(2) %>
-            <% include SideBar %>
-        <% end_if %>
+    </div>
+    <div class="row justify-content-lg-center">
+        <div class="col-lg-9 ">
+            <% include Volumes %>
+        </div>
     </div>
 </div>
 
