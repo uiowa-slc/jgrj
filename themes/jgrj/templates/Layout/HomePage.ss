@@ -1,6 +1,7 @@
 <% include Header %>
 
 <div class="bgcover">
+
     <div class="container">
         <h3 class="text-center display-4 mb-7 bgcover__text">
             We challenge our writers, our readers, and ourselves to question who we are and how the law defines us.
