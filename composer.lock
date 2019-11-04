@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527"
+                "reference": "2655f9fa49d8996622b9d7371481648467573ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/2655f9fa49d8996622b9d7371481648467573ac0",
+                "reference": "2655f9fa49d8996622b9d7371481648467573ac0",
                 "shasum": ""
             },
             "require": {
@@ -225,7 +225,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
                 "psr/log": "^1.0",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0"
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
             },
             "type": "library",
             "extra": {
@@ -257,7 +257,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-08-30T08:44:50+00:00"
+            "time": "2019-11-01T11:58:05+00:00"
         },
         {
             "name": "composer/installers",
@@ -530,16 +530,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.4.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0895c932405407fd3a7368b6910c09a24d26db11"
+                "reference": "df36d8dae3979cf927d5bbbed6f0427f39aadfec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0895c932405407fd3a7368b6910c09a24d26db11",
-                "reference": "0895c932405407fd3a7368b6910c09a24d26db11",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/df36d8dae3979cf927d5bbbed6f0427f39aadfec",
+                "reference": "df36d8dae3979cf927d5bbbed6f0427f39aadfec",
                 "shasum": ""
             },
             "require": {
@@ -559,7 +559,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.3-dev"
+                    "dev-master": "6.5-dev"
                 }
             },
             "autoload": {
@@ -592,7 +592,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-10-23T15:58:00+00:00"
+            "time": "2019-10-30T11:22:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -718,16 +718,16 @@
         },
         {
             "name": "intervention/image",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
-                "reference": "39eaef720d082ecc54c64bf54541c55f10db546d"
+                "reference": "abbf18d5ab8367f96b3205ca3c89fb2fa598c69e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/image/zipball/39eaef720d082ecc54c64bf54541c55f10db546d",
-                "reference": "39eaef720d082ecc54c64bf54541c55f10db546d",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/abbf18d5ab8367f96b3205ca3c89fb2fa598c69e",
+                "reference": "abbf18d5ab8367f96b3205ca3c89fb2fa598c69e",
                 "shasum": ""
             },
             "require": {
@@ -784,7 +784,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2019-06-24T14:06:31+00:00"
+            "time": "2019-11-02T09:15:47+00:00"
         },
         {
             "name": "jonom/focuspoint",
@@ -1145,12 +1145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "d0146917f6e187c05c5d63ee25887cbfbd85970a"
+                "reference": "5b6417529e81760d7ff0b34da15516a30ff1d507"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/d0146917f6e187c05c5d63ee25887cbfbd85970a",
-                "reference": "d0146917f6e187c05c5d63ee25887cbfbd85970a",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/5b6417529e81760d7ff0b34da15516a30ff1d507",
+                "reference": "5b6417529e81760d7ff0b34da15516a30ff1d507",
                 "shasum": ""
             },
             "require": {
@@ -1169,7 +1169,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/ss4.x-ui",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2019-10-28T15:11:10+00:00"
+            "time": "2019-10-30T20:15:25+00:00"
         },
         {
             "name": "md/deploy-helper",
@@ -1231,12 +1231,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "06388a0d8e205faae941d2f203e82b01b58047cf"
+                "reference": "6c104742453e562090337525eddfb5f066e7c0fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/06388a0d8e205faae941d2f203e82b01b58047cf",
-                "reference": "06388a0d8e205faae941d2f203e82b01b58047cf",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/6c104742453e562090337525eddfb5f066e7c0fb",
+                "reference": "6c104742453e562090337525eddfb5f066e7c0fb",
                 "shasum": ""
             },
             "require": {
@@ -1281,7 +1281,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/ss4.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2019-10-28T16:21:44+00:00"
+            "time": "2019-11-04T15:27:24+00:00"
         },
         {
             "name": "md/saml",
@@ -1421,12 +1421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar.git",
-                "reference": "f58bcc6c196412945a6ec33f232fcc61d9ed5adc"
+                "reference": "8f1269a3d33738d140fd62df45d64a3e6fcebe0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/f58bcc6c196412945a6ec33f232fcc61d9ed5adc",
-                "reference": "f58bcc6c196412945a6ec33f232fcc61d9ed5adc",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/8f1269a3d33738d140fd62df45d64a3e6fcebe0b",
+                "reference": "8f1269a3d33738d140fd62df45d64a3e6fcebe0b",
                 "shasum": ""
             },
             "require": {
@@ -1440,7 +1440,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/tree/1.2.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/issues"
             },
-            "time": "2018-07-05T17:48:54+00:00"
+            "time": "2019-11-04T15:20:06+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1822,12 +1822,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
-                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
                 "shasum": ""
             },
             "require": {
@@ -1861,7 +1861,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2019-10-25T08:06:51+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -1995,12 +1995,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-admin.git",
-                "reference": "d68229658e60f8754ffb27fe49ab45d84b8a1ad7"
+                "reference": "846e5fbdf3622e709b601b7323c39cab0dd8192c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/d68229658e60f8754ffb27fe49ab45d84b8a1ad7",
-                "reference": "d68229658e60f8754ffb27fe49ab45d84b8a1ad7",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/846e5fbdf3622e709b601b7323c39cab0dd8192c",
+                "reference": "846e5fbdf3622e709b601b7323c39cab0dd8192c",
                 "shasum": ""
             },
             "require": {
@@ -2045,7 +2045,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2019-10-23T23:04:08+00:00"
+            "time": "2019-10-28T22:14:14+00:00"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -2446,12 +2446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "0cf5d4cbe28de332cb29e8924f9ab80005f3946f"
+                "reference": "44b9e331f6a2dd9f01c91ce6b5e1f1e52837b012"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/0cf5d4cbe28de332cb29e8924f9ab80005f3946f",
-                "reference": "0cf5d4cbe28de332cb29e8924f9ab80005f3946f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/44b9e331f6a2dd9f01c91ce6b5e1f1e52837b012",
+                "reference": "44b9e331f6a2dd9f01c91ce6b5e1f1e52837b012",
                 "shasum": ""
             },
             "require": {
@@ -2555,7 +2555,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2019-10-18T02:58:13+00:00"
+            "time": "2019-10-29T21:37:32+00:00"
         },
         {
             "name": "silverstripe/googlesitemaps",
@@ -3723,12 +3723,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "d213ff5ad02068b298ed5de6972e6519b2789bdb"
+                "reference": "c111091db748ed394fd8c3e473a90ad3b80e08ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/d213ff5ad02068b298ed5de6972e6519b2789bdb",
-                "reference": "d213ff5ad02068b298ed5de6972e6519b2789bdb",
+                "url": "https://api.github.com/repos/symfony/config/zipball/c111091db748ed394fd8c3e473a90ad3b80e08ad",
+                "reference": "c111091db748ed394fd8c3e473a90ad3b80e08ad",
                 "shasum": ""
             },
             "require": {
@@ -3779,7 +3779,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-24T15:33:53+00:00"
+            "time": "2019-10-30T12:46:47+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -3837,12 +3837,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2b6a666d6ff7fb65d10b97d817c8e7930944afb9"
+                "reference": "3e915e5ce305f8bc8017597f71f1f4095092ddf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2b6a666d6ff7fb65d10b97d817c8e7930944afb9",
-                "reference": "2b6a666d6ff7fb65d10b97d817c8e7930944afb9",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/3e915e5ce305f8bc8017597f71f1f4095092ddf8",
+                "reference": "3e915e5ce305f8bc8017597f71f1f4095092ddf8",
                 "shasum": ""
             },
             "require": {
@@ -3878,7 +3878,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2019-09-01T21:32:23+00:00"
+            "time": "2019-10-30T12:43:22+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -4511,12 +4511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-session.git",
-                "reference": "e08f54f06166bccb41ab3ec6c06ea64ad9d78901"
+                "reference": "5402eb9437b9cbfdc9ecdcbd28f019f62020981b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/e08f54f06166bccb41ab3ec6c06ea64ad9d78901",
-                "reference": "e08f54f06166bccb41ab3ec6c06ea64ad9d78901",
+                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/5402eb9437b9cbfdc9ecdcbd28f019f62020981b",
+                "reference": "5402eb9437b9cbfdc9ecdcbd28f019f62020981b",
                 "shasum": ""
             },
             "require": {
@@ -4570,7 +4570,7 @@
                 "session",
                 "zf"
             ],
-            "time": "2019-09-20T12:55:49+00:00"
+            "time": "2019-10-28T19:44:08+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
