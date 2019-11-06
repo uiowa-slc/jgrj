@@ -30,11 +30,11 @@ class ArticleWordExtension extends DataExtension {
 							$footnoteObject->write();
 						}
 					}
-					$dom->saveXML($node);
+					$dom->saveHTML($node);
 				}
 			}
 		}
-		return $dom->saveXML();
+		return $dom->saveHTML();
 	}
 	private function innerXML($node) {
 		$doc = $node->ownerDocument;
@@ -42,7 +42,7 @@ class ArticleWordExtension extends DataExtension {
 		foreach ($node->childNodes as $child) {
 			$frag->appendChild($child->cloneNode(TRUE));
 		}
-		return $doc->saveXML($frag);
+		return $doc->saveHTML($frag);
 	}
 	protected function parseWordSuperscriptsFootnotes($content, $dryrun = false) {
 		$dom = new DOMDocument;
@@ -106,7 +106,7 @@ class ArticleWordExtension extends DataExtension {
 					//get the footnote value, encode it to html characters in utf8 to remove some
 					//Word weirdness, then decode to get proper html elements.
 
-					$footnoteValue = $footnoteParent->ownerDocument->saveXML($footnoteParent);
+					$footnoteValue = $footnoteParent->ownerDocument->saveHTML($footnoteParent);
 					$formattedfnValEncoded = htmlentities($footnoteValue, null, 'utf-8');
 					$formattedfnValEncoded = str_replace('&nbsp;', '', $formattedfnValEncoded);
 					$formattedfnValFiltered = html_entity_decode($formattedfnValEncoded, null, 'utf-8');
@@ -209,7 +209,7 @@ class ArticleWordExtension extends DataExtension {
 			}
 		}
 
-		return $dom->saveXML();
+		return $dom->saveHTML();
 	}
 
 	public function onBeforeWrite() {
