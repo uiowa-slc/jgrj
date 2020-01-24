@@ -1,7 +1,7 @@
 <% include Header %>
 
 
-<div class="container">
+<main class="container">
     <div class="row">
         <div class=" col-sm px-lg-0 content-container" role="main">
             <article>
@@ -20,5 +20,5 @@
             <% include SideBar %>
         <% end_if %>
     </div>
-</div>
+</main>
 

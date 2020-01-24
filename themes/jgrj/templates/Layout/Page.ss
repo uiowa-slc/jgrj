@@ -1,6 +1,6 @@
 <% include Header %>
 
-<div class="container">
+<main class="container">
 	<div class="row">
 		<div class="col-lg-8" role="main">
 			<article class="mt-5">
@@ -15,5 +15,5 @@
 			<% include SideBar %>
 		<% end_if %>
 	</div>
-</div>
+</main>
 

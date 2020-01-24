@@ -1,7 +1,7 @@
 <% include Header %>
 
 
-<div class="container">
+<main class="container">
     <div class="row justify-content-center">
         <div class="col-lg-9 col-xl-8">
             <article>
@@ -49,5 +49,5 @@
 
         </div>
     </div>
-</div>
+</main>
 
