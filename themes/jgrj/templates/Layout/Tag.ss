@@ -1,7 +1,7 @@
 <% include Header %>
 
 
-<div class="container">
+<main class="container">
     <div class="row">
        <div class="col-sm-12">
             <div class="mt-5">
@@ -15,9 +15,7 @@
 
                 <div class="article-cardholder mt-6">
                     <% loop $Articles %>
-
                         <% include ArticleCard %>
-
                     <% end_loop %>
                 </div>
 
@@ -31,5 +29,5 @@
             <% include SideBar %>
         <% end_if %>
     </div>
-</div>
+</main>
 
