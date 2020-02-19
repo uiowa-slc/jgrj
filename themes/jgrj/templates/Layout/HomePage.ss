@@ -1,11 +1,13 @@
 <% include Header %>
 
-<div class="bgcover">
+<div class="bgcover" <% if $Photo %>style="background-image: url($Photo.ScaleWidth(1300).URL);"<% end_if %>>
 
     <div class="container">
-        <h3 class="text-center display-4 mb-7 bgcover__text">
-            We challenge our writers, our readers, and ourselves to question who we are and how the law defines us.
-        </h3>
+        <% if $ImageText %>
+            <h3 class="text-center display-4 mb-7 bgcover__text">
+                $ImageText
+            </h3>
+        <% end_if %>
         <div class="ab">
             <div class="ab__a reveal-fx reveal-fx--translate-up">
                 <h3>About</h3>
