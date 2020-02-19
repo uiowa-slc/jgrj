@@ -13,9 +13,7 @@
                 </article>
                 <div class="article-cardholder mt-6">
                     <% loop $Articles %>
-
                         <% include ArticleCard %>
-
                     <% end_loop %>
                 </div>
                 $Form

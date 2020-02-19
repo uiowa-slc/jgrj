@@ -27,7 +27,7 @@
 		<div class="col-lg-8 offset-lg-1">
 			<div class="blog__content">
 				<% if $FeaturedImage %>
-					<img src="$FeaturedImage.ScaleMaxWidth(400).URL" class="float-right mb-3 ml-3"/>
+					<img src="$FeaturedImage.ScaleMaxWidth(400).URL" class="float-right mb-3 ml-3" alt="Title" />
 				<% end_if %>
 
 				<% if $Summary %>
