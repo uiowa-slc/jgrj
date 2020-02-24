@@ -90,11 +90,16 @@ table {
 	margin-bottom: 1rem;
 	color: #343a40;
 }
-.table td, .table th {
+table td, table th {
 	vertical-align: middle;
 	border: 1px solid #dee2e6;
 	padding: .5rem;
 	& p {
 		margin-bottom: 0;
 	}
+}
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    border-bottom-width: 2px;
 }
