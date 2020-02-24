@@ -35,8 +35,13 @@
 			left: 2rem;
 		}
 	}
-	& .byline a {
+	& .byline {
 		color: $gray-600;
+		font-family: $headings-font-family;
+		& a {
+			color: $gray-600;
+			font-family: $headings-font-family;
+		}
 	}
 	&__title {
 		& a {
@@ -68,4 +73,12 @@
 	color: $body-color;
 	font-size: 14px;
 	font-family: $headings-font-family;
+}
+.Article .byline {
+	color: $gray-600;
+	font-family: $headings-font-family;
+	& a {
+		color: $gray-600;
+		font-family: $headings-font-family;
+	}
 }

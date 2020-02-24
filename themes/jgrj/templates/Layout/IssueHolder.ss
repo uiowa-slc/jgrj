@@ -1,9 +1,9 @@
 <% include Header %>
 
 
-<div class="container">
+<main class="container">
     <div class="row">
-        <div class="col-sm-12" role="main">
+        <div class="col-sm-12">
             <div class="mt-5">
 
                 <% with $LatestIssue %>
@@ -27,7 +27,7 @@
                     </h1>
 
                     <% if $Date %>
-                        <p class="smallcaps subheader">$Date</p>
+                        <h6 class="text-center"><em>$Date</em></h6>
                     <% end_if %>
 
                     <hr />
@@ -55,5 +55,5 @@
             <% include Volumes %>
         </div>
     </div>
-</div>
+</main>
 

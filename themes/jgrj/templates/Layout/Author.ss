@@ -1,24 +1,25 @@
 <% include Header %>
 
 
-<div class="container">
+<main class="container">
     <div class="row">
-        <div class=" col-sm px-lg-0 content-container" role="main">
-            <article>
-                <h1>$Author.Title</h1>
-                <% if $Author.BiographicalDetails %>
-                <div class="content">$Author.BiographicalDetails</div>
-            </article>
-            <% loop $Articles.Limit(4) %>
-                <% include ArticleCard %>
-            <% end_loop %>
-            $Form
-            $PageComments
-
+       <div class="col-sm-12">
+            <div class="mt-5">
+                <article>
+                    <h1>$Author.Title</h1>
+                    <% if $Author.BiographicalDetails %>
+                        <div class="content">$Author.BiographicalDetails</div>
+                    <% end_if %>
+                </article>
+                <div class="article-cardholder mt-6">
+                    <% loop $Articles %>
+                        <% include ArticleCard %>
+                    <% end_loop %>
+                </div>
+                $Form
+                $PageComments
+            </div>
         </div>
-        <% if $Menu(2) || $SideBarView.Widgets %>
-            <% include SideBar %>
-        <% end_if %>
     </div>
-</div>
+</main>
 

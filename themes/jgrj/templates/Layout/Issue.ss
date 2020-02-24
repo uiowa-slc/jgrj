@@ -1,7 +1,7 @@
 <% include Header %>
 
 
-<div class="container">
+<main class="container">
     <div class="row">
         <div class="col-sm-12" role="main">
             <div class="mt-5">
@@ -34,5 +34,5 @@
             <% include Volumes %>
         </div>
     </div>
-</div>
+</main>
 
