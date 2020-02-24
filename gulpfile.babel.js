@@ -16,7 +16,9 @@ import pkg from './package.json';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-
+browserSync.init({
+    proxy: "http://localhost:8888/jgrj",
+});
 
 // Lint JavaScript
 function lint(){
@@ -35,7 +37,8 @@ function images(){
       interlaced: true
     }))
     .pipe(gulp.dest('./themes/jgrj/dist/images'))
-    .pipe($.size({title: './themes/jgrj/dist/images'}));
+    .pipe($.size({title: './themes/jgrj/dist/images'}))
+    .pipe(browserSync.stream());
 }
 
 
@@ -52,6 +55,7 @@ function copy(){
        '!./themes/jgrj/*.html',
      ],{dot: true})
     .pipe(gulp.dest('./themes/jgrj/dist/'))
+
     .pipe($.size({title: 'copy'}));
 }
 
@@ -98,7 +102,8 @@ function styles(){
     .pipe($.if('*.css', $.postcss(plugins)))
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('./themes/jgrj/dist/styles'));
+    .pipe(gulp.dest('./themes/jgrj/dist/styles'))
+    .pipe(browserSync.stream());
 };
 
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
@@ -131,7 +136,8 @@ function scripts(){
       // Output files
       .pipe($.size({title: 'scripts'}))
       .pipe($.sourcemaps.write('.'))
-      .pipe(gulp.dest('./themes/jgrj/dist/scripts'));
+      .pipe(gulp.dest('./themes/jgrj/dist/scripts'))
+      .pipe(browserSync.stream());
 };
 
 
