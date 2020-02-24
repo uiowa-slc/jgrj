@@ -83,3 +83,18 @@
 		font-family: $headings-font-family;
 	}
 }
+
+/* Table Styling */
+table {
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #343a40;
+}
+.table td, .table th {
+	vertical-align: middle;
+	border: 1px solid #dee2e6;
+	padding: .5rem;
+	& p {
+		margin-bottom: 0;
+	}
+}
