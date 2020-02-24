@@ -1,4 +1,4 @@
-<article class="article-card">
+<article class="article-card" aria-label="$ArticleTitle">
 
 		<div class="article-card__body">
 			<% if $Category %>

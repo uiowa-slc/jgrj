@@ -1,5 +1,5 @@
 <% include Header %>
-<div class="blah mb-5">
+<section class="blog-wrap mb-5">
 	<div class="blog-header">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -18,8 +18,8 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="container">
+</section>
+<main id="main-content" class="container">
 	<div class="row">
 		<div class="col-lg-1">
 			 <% include ShareList %>
@@ -83,7 +83,7 @@
 			</div>
 		</div>
 	<% end_if %>
-</div>
+</main>
 
 
 

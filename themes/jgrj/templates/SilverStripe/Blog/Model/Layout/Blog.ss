@@ -1,6 +1,6 @@
 <% include Header %>
 
-<div class="container">
+<main class="container" id="main-content">
 	<div class="row">
 		<div class="col-lg-12" role="main">
 			<div class="mt-5">
@@ -30,6 +30,6 @@
 			<% include SideBar %>
 		<% end_if %> --%>
 	</div>
-</div>
+</main>
 
 <%-- <% include SilverStripe\\Blog\\BlogSideBar %> --%>

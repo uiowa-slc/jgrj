@@ -55,6 +55,12 @@
 	}
 	&__tags {
 		font-size: 13px;
+		& a {
+			color: $body-color;
+			font-size: 14px;
+			font-family: $headings-font-family;
+			text-decoration: underline;
+		}
 	}
 	&__footer {
 		border-top: 1px solid $gray-200;
@@ -69,16 +75,11 @@
 	}
 }
 
-.tag {
-	color: $body-color;
-	font-size: 14px;
-	font-family: $headings-font-family;
-}
 .Article .byline {
-	color: $gray-600;
+	color: #687178;
 	font-family: $headings-font-family;
 	& a {
-		color: $gray-600;
+		color: #687178;
 		font-family: $headings-font-family;
 	}
 }

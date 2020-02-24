@@ -1,34 +1,34 @@
 <% include Header %>
 
-<div class="bgcover" <% if $Photo %>style="background-image: url($Photo.ScaleWidth(1300).URL);"<% end_if %>>
+<section id="main-content" class="bgcover" <% if $Photo %>style="background-image: url($Photo.ScaleWidth(1300).URL);"<% end_if %>>
 
     <div class="container">
         <% if $ImageText %>
-            <h3 class="text-center display-4 mb-7 bgcover__text">
+            <h1 class="text-center display-4 mb-7 bgcover__text">
                 $ImageText
-            </h3>
+            </h1>
         <% end_if %>
         <div class="ab">
             <div class="ab__a reveal-fx reveal-fx--translate-up">
                 <h3>$BlockOneTitle</h3>
                 <p>$BlockOneContent</p>
-                <a href="$BlockOneAssociatedPage.Link" class="btn btn-dark">Learn More</a>
+                <a href="$BlockOneAssociatedPage.Link" class="btn btn-dark" aria-label="$BlockOneTitle">Learn More</a>
             </div>
             <div class="ab__a reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="100">
                 <h3>$BlockTwoTitle</h3>
                 <p>$BlockTwoContent</p>
-                <a href="$BlockTwoAssociatedPage.Link" class="btn btn-dark">Learn More</a>
+                <a href="$BlockTwoAssociatedPage.Link" class="btn btn-dark" aria-label="$BlockTwoTitle">Learn More</a>
             </div>
             <div class="ab__a reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
                 <h3>$BlockThreeTitle</h3>
                 <p>$BlockThreeContent</p>
-                <a href="$BlockThreeAssociatedPage.Link" class="btn btn-dark">Learn More</a>
+                <a href="$BlockThreeAssociatedPage.Link" class="btn btn-dark" aria-label="$BlockThreeTitle">Learn More</a>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="hp-one pt-8 pb-9">
+<section class="hp-one pt-8 pb-9">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -59,8 +59,8 @@
             </div>
         </div>
     </div>
-</div>
-<div class="hp-two pb-6">
+</section>
+<section class="hp-two pb-6">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -92,15 +92,15 @@
             </div>
         </div>
     </div>
-</div>
-<div class="hp-three py-6">
+</section>
+<section class="hp-three py-6">
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-4 ">
                 <h3 class="display-4">$SectionThreeTitle</h3>
                 <div class="lead">$SectionThreeContent</div>
                 <% if $SectionThreeAssociatedPageID %>
-                    <p><a href="$SectionThreeAssociatedPage.Link" class="btn btn-outline-dark">Learn More</a></p>
+                    <p><a href="$SectionThreeAssociatedPage.Link" class="btn btn-outline-dark" aria-label="$SectionThreeTitle">Learn More</a></p>
                 <% end_if %>
             </div>
             <div class="col-lg-6 offset-lg-2">
@@ -108,7 +108,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <div class="container">
     <div class="row">

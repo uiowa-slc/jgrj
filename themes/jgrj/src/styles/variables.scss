@@ -4,12 +4,14 @@
 -------------------------------------------*/
 
 // Color system
+$blue: #0071EB;
 $gold: #ffcd00;
 $highlight: $gold;
 
+
 $body-bg: #f8f6f3;
 $body-color: #343a40;
-
+$text-muted: #687178;
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
@@ -65,4 +67,4 @@ $spacers: (
 
 //BigfootJS Settings:
 
-$button-color: rgb(110, 110, 110); 
+$button-color: rgb(110, 110, 110);

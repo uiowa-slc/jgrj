@@ -1,7 +1,7 @@
 <% include Header %>
 
 
-<main class="container">
+<main class="container" id="main-content">
     <div class="row">
         <div class="col-sm-12" role="main">
             <div class="mt-5">

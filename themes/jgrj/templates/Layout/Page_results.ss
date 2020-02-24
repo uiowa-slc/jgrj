@@ -1,6 +1,6 @@
 <% include Banner %>
 
-<div id="Content" class="col-sm searchResults">
+<div id="Content" class="col-sm searchResults" id="main-content">
     <h1>$Title</h1>
 
     <% if $Query %>

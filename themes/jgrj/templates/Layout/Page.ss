@@ -1,8 +1,8 @@
 <% include Header %>
 
-<main class="container">
+<main class="container" id="main-content">
 	<div class="row">
-		<div class="col-lg-8" role="main">
+		<div class="col-lg-8">
 			<article class="mt-5">
 				<h1>$Title</h1>
 				<div class="content">$Content</div>

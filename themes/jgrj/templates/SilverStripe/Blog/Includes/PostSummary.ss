@@ -3,7 +3,7 @@
 
 		<% if $FeaturedImage %>
 			<a href="$Link">
-				<img src="$FeaturedImage.Fill(400,300).URL" class="card-img-top" alt=""/>
+				<img src="$FeaturedImage.Fill(400,300).URL" class="card-img-top" alt="$Title"/>
 			</a>
 		<% end_if %>
 

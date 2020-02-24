@@ -1,6 +1,6 @@
-<aside class="col-lg-4 col-xl-3 offset-xl-1" role="complementary">
+<aside class="col-lg-4 col-xl-3 offset-xl-1">
 	<% if Menu(2) %>
-		<nav class="sidenav mt-5">
+		<nav class="sidenav mt-5" aria-label="Section Navigation">
 			<% if Menu(2) %>
 				<% with Level(1) %>
 					<h3 class="sidenav__title">

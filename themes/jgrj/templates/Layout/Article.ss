@@ -1,7 +1,7 @@
 <% include Header %>
 
 
-<main class="container">
+<main class="container" id="main-content">
     <div class="row justify-content-center">
         <div class="col-lg-9 col-xl-8">
             <div>
