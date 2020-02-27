@@ -45,9 +45,6 @@ class HomePage extends Page {
 	private static $owns = array(
 		'Photo',
 		'SectionOnePhoto',
-		'SectionTwoBlockOnePhoto',
-		'SectionTwoBlockTwoPhoto',
-		'SectionTwoBlockThreePhoto',
 		'SectionThreePhoto',
 	);
 
