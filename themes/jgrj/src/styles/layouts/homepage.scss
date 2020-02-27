@@ -29,7 +29,23 @@ img {
 		background-color: #fff;
 		padding: 2em;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		& h3 {
+			 font-variant: small-caps;
+		}
+		& p {
+			font-size: 90%;
+		}
 	}
+}
+.ab__a:hover {
+	background-color: $black;
+	& h3, & p {
+		color: #fff;
+	}
+
 }
 
 .hp-one {

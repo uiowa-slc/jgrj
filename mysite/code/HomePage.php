@@ -27,9 +27,6 @@ class HomePage extends Page {
 		'SectionOneContent' => 'HTMLText',
 		'SectionTwoTitle' => 'Text',
 		'SectionTwoContent' => 'HTMLText',
-		'SectionTwoBlockOneTitle' =>'Text',
-		'SectionTwoBlockTwoTitle' =>'Text',
-		'SectionTwoBlockThreeTitle' =>'Text',
 		'SectionThreeTitle' => 'Text',
 		'SectionThreeContent' => 'HTMLText',
 
@@ -38,9 +35,6 @@ class HomePage extends Page {
 	private static $has_one = array(
 		'Photo' => Image::class,
 		'SectionOnePhoto' =>Image::class,
-		'SectionTwoBlockOnePhoto' =>Image::class,
-		'SectionTwoBlockTwoPhoto' =>Image::class,
-		'SectionTwoBlockThreePhoto' =>Image::class,
 		'SectionThreePhoto' =>Image::class,
 		'BlockOneAssociatedPage' => SiteTree::class,
 		'BlockTwoAssociatedPage' => SiteTree::class,
@@ -97,15 +91,7 @@ class HomePage extends Page {
 		/* Section Two */
 		$f->addFieldToTab('Root.SectionTwo', new TextField('SectionTwoTitle', 'Title'));
 		$f->addFieldToTab('Root.SectionTwo', HTMLEditorField::create('SectionTwoContent', 'Content')->setRows(3));
-		$f->addFieldToTab('Root.SectionTwo', new HeaderField('Block One'));
-		$f->addFieldToTab('Root.SectionTwo', new TextField('SectionTwoBlockOneTitle', 'Title'));
-		$f->addFieldToTab('Root.SectionTwo', new UploadField('SectionTwoBlockOnePhoto', 'Upload Photo'));
-		$f->addFieldToTab('Root.SectionTwo', new HeaderField('Block Two'));
-		$f->addFieldToTab('Root.SectionTwo', new TextField('SectionTwoBlockTwoTitle', 'Title'));
-		$f->addFieldToTab('Root.SectionTwo', new UploadField('SectionTwoBlockTwoPhoto', 'Upload Photo'));
-		$f->addFieldToTab('Root.SectionTwo', new HeaderField('Block Three'));
-		$f->addFieldToTab('Root.SectionTwo', new TextField('SectionTwoBlockThreeTitle','Title'));
-		$f->addFieldToTab('Root.SectionTwo', new UploadField('SectionTwoBlockThreePhoto', 'Upload Photo'));
+
 
 		/* Section Three */
 		$f->addFieldToTab('Root.SectionThree', new TextField('SectionThreeTitle', 'Title'));

@@ -9,7 +9,13 @@
 					<a href="$Link" class="link-highlight">$ArticleTitle.RAW</a><% else %><a href="$Link">$Title</a>
 				<% end_if %>
 			</h3>
-			<% include ArticleByline %>
+			<div class="byline">
+				<% if $Citation %>
+					<div class="smallcaps citation">
+						<small>$Citation</small>
+					</div>
+				<% end_if %>
+			</div>
 			<div class="article-card__text mt-3">
 				$Content.LimitCharacters(200)
 			</div>

@@ -4,7 +4,7 @@
 
     <div class="container">
         <% if $ImageText %>
-            <h1 class="text-center display-4 mb-7 bgcover__text">
+            <h1 class="text-center display-3 mb-7 bgcover__text">
                 $ImageText
             </h1>
         <% end_if %>
@@ -12,23 +12,23 @@
             <div class="ab__a reveal-fx reveal-fx--translate-up">
                 <h3>$BlockOneTitle</h3>
                 <p>$BlockOneContent</p>
-                <a href="$BlockOneAssociatedPage.Link" class="btn btn-dark" aria-label="$BlockOneTitle">Learn More</a>
+                <a href="$BlockOneAssociatedPage.Link" class="btn btn-warning" aria-label="$BlockOneTitle">Learn More</a>
             </div>
             <div class="ab__a reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="100">
                 <h3>$BlockTwoTitle</h3>
                 <p>$BlockTwoContent</p>
-                <a href="$BlockTwoAssociatedPage.Link" class="btn btn-dark" aria-label="$BlockTwoTitle">Learn More</a>
+                <a href="$BlockTwoAssociatedPage.Link" class="btn btn-warning" aria-label="$BlockTwoTitle">Learn More</a>
             </div>
             <div class="ab__a reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
                 <h3>$BlockThreeTitle</h3>
                 <p>$BlockThreeContent</p>
-                <a href="$BlockThreeAssociatedPage.Link" class="btn btn-dark" aria-label="$BlockThreeTitle">Learn More</a>
+                <a href="$BlockThreeAssociatedPage.Link" class="btn btn-warning" aria-label="$BlockThreeTitle">Learn More</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="hp-one pt-8 pb-9">
+<section class="hp-one pt-8 pb-6">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -60,39 +60,8 @@
         </div>
     </div>
 </section>
-<section class="hp-two pb-6">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="p-2">
-                    <figure class="reveal-fx reveal-fx--translate-up">
-                        <img src="$SectionTwoBlockOnePhoto.Fill(600,600).URL" alt="SectionTwoBlockOnePhoto.Title">
-                    </figure>
-                    <%-- <p class="text-uppercase my-2 text-muted"><small>Label</small></p> --%>
-                    <h3>$SectionTwoBlockOneTitle</h3>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="p-2">
-                    <figure class="reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="100">
-                       <img src="$SectionTwoBlockTwoPhoto.Fill(600,600).URL" alt="SectionTwoBlockThreePhoto.Title">
-                    </figure>
-                    <%-- <p class="text-uppercase my-2 text-muted"><small>Label</small></p> --%>
-                    <h3>$SectionTwoBlockTwoTitle</h3>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="p-2">
-                    <figure class="reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
-                        <img src="$SectionTwoBlockThreePhoto.Fill(600,600).URL" alt="SectionTwoBlockThreePhoto.Title">
-                    </figure>
-                    <%-- <p class="text-uppercase my-2 text-muted"><small>Label</small></p> --%>
-                    <h3>$SectionTwoBlockThreeTitle</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 <section class="hp-three py-6">
     <div class="container">
         <div class="row d-flex align-items-center">
@@ -100,7 +69,7 @@
                 <h3 class="display-4">$SectionThreeTitle</h3>
                 <div class="lead">$SectionThreeContent</div>
                 <% if $SectionThreeAssociatedPageID %>
-                    <p><a href="$SectionThreeAssociatedPage.Link" class="btn btn-outline-dark" aria-label="$SectionThreeTitle">Learn More</a></p>
+                    <p><a href="$SectionThreeAssociatedPage.Link" class="btn btn-warning " aria-label="$SectionThreeTitle">Learn More</a></p>
                 <% end_if %>
             </div>
             <div class="col-lg-6 offset-lg-2">

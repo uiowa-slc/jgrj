@@ -81,6 +81,19 @@
 	& a {
 		color: #687178;
 		font-family: $headings-font-family;
+		text-decoration: underline;
+	}
+}
+
+/* Author Notes - sidebar */
+.author-notes {
+	color: #555;
+	font-size: 70%;
+	@include media-breakpoint-up(lg) {
+		padding-top: 25px;
+	}
+	.details > p:first-of-type {
+		display: inline;
 	}
 }
 

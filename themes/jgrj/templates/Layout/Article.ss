@@ -57,6 +57,36 @@
             $PageComments
 
         </div>
+        <div class="col-lg-2">
+            <div class="author-notes">
+                <% if not $IsExcerpt %>
+                    <% loop $SortedAuthors %>
+                            <% if $BiographicalDetails || ArticleNote %>
+                            <span class="asterisks">$Asterisks</span>
+                            <span class="details">
+                            <% if $BiographicalDetails %>
+                                $BiographicalDetails
+                            <% end_if %>
+                            <% if $ArticleNote %>
+                                <br />
+                                <br />
+                                $ArticleNote
+                            <% end_if %>
+                            <% if not $Last %>
+                                <hr />
+                            <% end_if %>
+                            </span>
+                        <% end_if %>
+                    <% end_loop %>
+                    <% if JointAuthorNotes %>
+                        <hr />
+                        <div class="joint-author-notes">
+                            $JointAuthorNotes
+                        </div>
+                    <% end_if %>
+                <% end_if %>
+            </div>
+        </div>
     </div>
 </main>
 
