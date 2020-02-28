@@ -16,9 +16,6 @@
 					</div>
 				<% end_if %>
 			</div>
-			<div class="article-card__text mt-3">
-				$Content.LimitCharacters(200)
-			</div>
 		</div>
 
 
