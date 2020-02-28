@@ -117,3 +117,13 @@ table thead th {
     border-bottom: 2px solid #dee2e6;
     border-bottom-width: 2px;
 }
+
+/* Footnotes */
+.bigfoot-footnote__content {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
