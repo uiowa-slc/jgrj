@@ -52,7 +52,8 @@
     "extra": {
         "resources-dir": "_resources",
         "expose": [
-            "themes/jgrj/dist"
+            "themes/jgrj/dist",
+            "themes/jgrj/css"
         ],
         "project-files-installed": [
             "app/.htaccess",

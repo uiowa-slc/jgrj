@@ -85,6 +85,7 @@ function styles(){
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
     './themes/jgrj/src/styles/main.scss',
+    './themes/jgrj/src/styles/editor.scss',
   ])
     .pipe($.newer('.tmp/styles'))
     .pipe($.sourcemaps.init())
