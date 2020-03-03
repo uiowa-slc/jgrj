@@ -37,12 +37,14 @@
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/print";
 
-@import 'global/_typography'; 
-@import 'global/_global';  
+@import 'global/_typography';
+@import 'global/_global';
 @import 'global/_misc';
 
-html,body { 
+html,body {
     background: $main-bg;
     padding: $spacer/2;
 }
- 
+.small-caps {
+	font-variant: small-caps;
+}
