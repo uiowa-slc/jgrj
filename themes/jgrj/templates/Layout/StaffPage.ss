@@ -4,6 +4,7 @@
 	<%-- $Breadcrumbs --%>
 
 
+
 	$BeforeContent
 
 	<div class="row">
@@ -14,12 +15,18 @@
 
 			<div class="mt-5">
 				<div class="staffpage">
-
-					<% if $Photo %>
-						<img src="$Photo.ScaleWidth(945).URL" alt="$Title" role="presentation" class="staffpage__img">
-					<% end_if %>
 					<h1>$Title</h1>
-					<h5>$Position</h5>
+					<% if $Photo %>
+                        <!-- 0 equals square, 1 equals portrait, and 2 equals landscape -->
+                        <% if $Photo.Orientation == 0 || $Photo.Orientation == 1 %>
+                            <img src="$Photo.ScaleWidth(400).URL" class="right" alt="$Title" role="presentation" class="staffpage__img">
+                        <% else %>
+                            <img src="$Photo.ScaleWidth(945).URL" alt="$Title" role="presentation" class="staffpage__img">
+                        <% end_if %>
+
+					<% end_if %>
+
+					<h4>$Position</h4>
 					<ul>
 						<% if $EmailAddress %><li><strong>Email:</strong> <a href="mailto:$EmailAddress">$EmailAddress</a></li><% end_if %>
 						<% if $Phone %><li><strong>Phone:</strong> $Phone</li><% end_if %>
