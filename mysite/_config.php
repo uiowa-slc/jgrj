@@ -18,3 +18,6 @@ i18n::set_locale('en_US');
 
 HtmlEditorConfig::get('cms')->addButtonsToLine(2, 'sup', 'separator');
 HtmlEditorConfig::get('cms')->removeButtons('pasteword');
+HtmlEditorConfig::get('cms')->setOptions(array(
+    'extended_valid_elements' => 'span[!class|!style],p[class|style]'
+));
