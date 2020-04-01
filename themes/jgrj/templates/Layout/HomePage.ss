@@ -66,14 +66,24 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-4 ">
-                <h3 class="display-4">$SectionThreeTitle</h3>
-                <div class="lead">$SectionThreeContent</div>
-                <% if $SectionThreeAssociatedPageID %>
-                    <p><a href="$SectionThreeAssociatedPage.Link" class="btn btn-warning " aria-label="$SectionThreeTitle">Learn More</a></p>
-                <% end_if %>
+                <h3 class="display-4 small-caps">Alumni Spotlight</h3>
+                <% with $Page(alumni) %>
+                    <% loop $Children.Limit(1) %>
+                        <br />
+                        <h3>$FirstName $LastName</h3>
+                        <p>$Content.limitCharacters(400)</p>
+                        <p><a href="$Link" class="btn btn-warning">View Alumni</a></p>
+                    <% end_loop %>
+                <% end_with %>
+                
             </div>
             <div class="col-lg-6 offset-lg-2">
-                <img src="$SectionThreePhoto.Fill(600,750).URL" alt="SectionThreePhoto.Title" class="reveal-fx reveal-fx--translate-up">
+                <% with $Page(alumni) %>
+                    <% loop $Children.Limit(1) %>
+                        <img src="$Photo.Fill(600,750).URL" alt="$Title" class="reveal-fx reveal-fx--translate-up">
+                    <% end_loop %>
+                <% end_with %>
+                
             </div>
         </div>
     </div>

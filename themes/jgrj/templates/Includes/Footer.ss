@@ -4,16 +4,7 @@
 
         <div class="row">
         <div class="footer__info">
-            <% if $SiteConfig.FooterLogo %>
-                <div class="footer__logo">
-                    <img class="lazyload" data-src="$SiteConfig.FooterLogo.URL" alt="$SiteConfig.Title Logo">
-                </div>
-            <% else_if $SiteConfig.DisableDivisionBranding %>
-                <a href="http://uiowa.edu" class="footer__logo"><img class="lazyload" data-src="{$ThemeDir}/dist/images/ui-logo-footer.png" alt="The University of Iowa"></a>
-            <% else %>
-                <a href="http://studentlife.uiowa.edu" class="footer__logo"><img class="lazyload" width="300" height="81
-            " data-src="{$ThemeDir}/dist/images/dosl-uiowa.png" alt="Division Of Student Life"></a>
-            <% end_if %>
+            
             <% if $SiteConfig.GroupSummary %>
                 <div class="footer__summary">$SiteConfig.GroupSummary</div>
             <% else_if $SiteConfig.DisableDivisionBranding %>
@@ -79,37 +70,45 @@
         <% if $SiteConfig.FacebookLink || $SiteConfig.TwitterLink || $SiteConfig.VimeoLink || $SiteConfig.YouTubeLink || $SiteConfig.InstagramLink || $SiteConfig.LinkedInLink || $SiteConfig.PinterestLink || $SiteConfig.FlickrLink %>
             <div class="footer__socialmedia" itemscope itemtype="http://schema.org/Organization">
                 <link itemprop="url" href="$AbsoluteBaseURL">
-                <h3 class="footer__heading">Social Media</h3>
+                <% if $SiteConfig.FooterLogo %>
+                    <div class="footer__logo">
+                        <img class="lazyload" data-src="$SiteConfig.FooterLogo.URL" alt="$SiteConfig.Title Logo">
+                    </div>
+                    <% else_if $SiteConfig.DisableDivisionBranding %>
+                        <a href="http://uiowa.edu" class="footer__logo"><img class="lazyload" data-src="{$ThemeDir}/dist/images/ui-logo-footer.png" alt="The University of Iowa"></a>
+                    <% else %>
+                        <a href="http://studentlife.uiowa.edu" class="footer__logo"><img class="lazyload" width="300" height="81" data-src="{$ThemeDir}/dist/images/dosl-uiowa.png" alt="Division Of Student Life"></a>
+                <% end_if %>
                 <ul class="">
                     <% if $SiteConfig.FacebookLink %>
-                        <li><a href="$SiteConfig.FacebookLink" target="_blank" class="footer__facebook" itemprop="sameAs">Facebook</a></li>
+                        <li><a href="$SiteConfig.FacebookLink" target="_blank" class="" itemprop="sameAs"><i class="fab fa-facebook-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.TwitterLink %>
-                        <li><a href="$SiteConfig.TwitterLink" target="_blank" class="footer__twitter" itemprop="sameAs">Twitter</a></li>
+                        <li><a href="$SiteConfig.TwitterLink" target="_blank" class="" itemprop="sameAs"><i class="fab fa-twitter-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.VimeoLink %>
-                        <li><a href="$SiteConfig.VimeoLink" target="_blank" class="footer__vimeo" itemprop="sameAs">Vimeo</li>
+                        <li><a href="$SiteConfig.VimeoLink" target="_blank" class="footer__vimeo" itemprop="sameAs"><i class="fab fa-vimeo-square"></i></li>
                     <% end_if %>
                     <% if $SiteConfig.YouTubeLink %>
-                        <li><a href="$SiteConfig.YouTubeLink" target="_blank" class="footer__youtube" itemprop="sameAs">Youtube</a></li>
+                        <li><a href="$SiteConfig.YouTubeLink" target="_blank" class="footer__youtube" itemprop="sameAs"><i class="fab fa-youtube-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.InstagramLink %>
-                        <li><a href="$SiteConfig.InstagramLink" target="_blank" class="footer__instagram" itemprop="sameAs">Instagram</a></li>
+                        <li><a href="$SiteConfig.InstagramLink" target="_blank" class="footer__instagram" itemprop="sameAs"><i class="fab fa-instagram-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.LinkedInLink %>
-                        <li><a href="$SiteConfig.LinkedInLink" target="_blank" class="footer__linkedin" itemprop="sameAs">LinkedIn</a></li>
+                        <li><a href="$SiteConfig.LinkedInLink" target="_blank" class="footer__linkedin" itemprop="sameAs"><i class="fab fa-linkedin"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.PinterestLink %>
-                        <li><a href="$SiteConfig.PinterestLink" target="_blank" class="footer__pinterest" itemprop="sameAs">Pinterest</a></li>
+                        <li><a href="$SiteConfig.PinterestLink" target="_blank" class="footer__pinterest" itemprop="sameAs"><i class="fab fa-pinterest-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.FlickrLink %>
-                        <li><a href="$SiteConfig.FlickrLink" target="_blank" class="footer__flickr" itemprop="sameAs">Flickr</a></li>
+                        <li><a href="$SiteConfig.FlickrLink" target="_blank" class="footer__flickr" itemprop="sameAs"><i class="fab fa-flickr"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.Github %>
-                        <li><a href="$SiteConfig.Github" target="_blank" class="footer__github" itemprop="sameAs">Github</a></li>
+                        <li><a href="$SiteConfig.Github" target="_blank" class="footer__github" itemprop="sameAs"><i class="fab fa-github-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.Snapchat %>
-                        <li><a href="https://www.snapchat.com/add/$SiteConfig.Snapchat" target="_blank" class="footer__snapchat" itemprop="sameAs">Snapchat</a></li>
+                        <li><a href="https://www.snapchat.com/add/$SiteConfig.Snapchat" target="_blank" class="footer__snapchat" itemprop="sameAs"><i class="fab fa-snapchat-square"></i></a></li>
                     <% end_if %>
                 </ul>
                 <% if $SiteConfig.Disclaimer %>

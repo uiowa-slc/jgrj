@@ -27,25 +27,20 @@ class HomePage extends Page {
 		'SectionOneContent' => 'HTMLText',
 		'SectionTwoTitle' => 'Text',
 		'SectionTwoContent' => 'HTMLText',
-		'SectionThreeTitle' => 'Text',
-		'SectionThreeContent' => 'HTMLText',
 
 	);
 
 	private static $has_one = array(
 		'Photo' => Image::class,
 		'SectionOnePhoto' =>Image::class,
-		'SectionThreePhoto' =>Image::class,
 		'BlockOneAssociatedPage' => SiteTree::class,
 		'BlockTwoAssociatedPage' => SiteTree::class,
 		'BlockThreeAssociatedPage' => SiteTree::class,
-		'SectionThreeAssociatedPage' => SiteTree::class,
 	);
 
 	private static $owns = array(
 		'Photo',
 		'SectionOnePhoto',
-		'SectionThreePhoto',
 	);
 
 	private static $icon_class = 'font-icon-p-home';
@@ -88,13 +83,6 @@ class HomePage extends Page {
 		/* Section Two */
 		$f->addFieldToTab('Root.SectionTwo', new TextField('SectionTwoTitle', 'Title'));
 		$f->addFieldToTab('Root.SectionTwo', HTMLEditorField::create('SectionTwoContent', 'Content')->setRows(3));
-
-
-		/* Section Three */
-		$f->addFieldToTab('Root.SectionThree', new TextField('SectionThreeTitle', 'Title'));
-		$f->addFieldToTab('Root.SectionThree', HTMLEditorField::create('SectionThreeContent', 'Content')->setRows(3));
-		$f->addFieldToTab('Root.SectionThree', new UploadField('SectionThreePhoto', 'Upload Photo'));
-		$f->addFieldToTab('Root.SectionThree', TreeDropdownField::create('SectionThreeAssociatedPageID', 'Link to this page', SiteTree::class));
 
 
 		// $gridFieldConfig = GridFieldConfig_RecordEditor::create();

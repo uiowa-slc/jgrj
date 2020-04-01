@@ -1,3 +1,6 @@
+#BetterNavigator {
+	display: none;
+}
 .header {
 	background-color: #fff;
 	padding: 4px 0;
@@ -20,10 +23,35 @@
 .navbar-expand-lg .navbar-nav .nav-link {
 	margin: 0 1px;
 	border-radius: 3px;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		height: 2px;
+		width: 100%;
+		max-width: 50px;
+		background-color: #ffcd00;
+		opacity: 0;
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+		transition: all .125s ease-in;
+		position: absolute;
+		left: 0;
+		bottom: 6px;
+		display: inline-block;
+		max-width: 100%;
+		visibility: hidden;
+	}
 }
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
 	@include media-breakpoint-up(lg) {
-		background-color: $highlight;
+		// background-color: $highlight;
+		&:before {
+			opacity: 1;
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+			visibility: visible;
+		}
 	}
 }
 .navbar-brand {

@@ -13,6 +13,9 @@
 		  <title>$Title - $SiteConfig.Title | The University of Iowa</title>
 		<% end_if %>
 		$OpenGraph
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/49191f9021.js" crossorigin="anonymous"></script>
 		<!-- Disable tap highlight on IE -->
 		<meta name="msapplication-tap-highlight" content="no">
 
