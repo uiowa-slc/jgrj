@@ -79,36 +79,36 @@
                     <% else %>
                         <a href="http://studentlife.uiowa.edu" class="footer__logo"><img class="lazyload" width="300" height="81" data-src="{$ThemeDir}/dist/images/dosl-uiowa.png" alt="Division Of Student Life"></a>
                 <% end_if %>
-                <ul class="">
+                <ul class="list-unstyled d-flex justify-content-center">
                     <% if $SiteConfig.FacebookLink %>
-                        <li><a href="$SiteConfig.FacebookLink" target="_blank" class="" itemprop="sameAs"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.FacebookLink" target="_blank" class="" itemprop="sameAs"><i class="fab fa-facebook-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.TwitterLink %>
-                        <li><a href="$SiteConfig.TwitterLink" target="_blank" class="" itemprop="sameAs"><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.TwitterLink" target="_blank" class="" itemprop="sameAs"><i class="fab fa-twitter-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.VimeoLink %>
-                        <li><a href="$SiteConfig.VimeoLink" target="_blank" class="footer__vimeo" itemprop="sameAs"><i class="fab fa-vimeo-square"></i></li>
+                        <li class="m-2"><a href="$SiteConfig.VimeoLink" target="_blank" class="footer__vimeo" itemprop="sameAs"><i class="fab fa-vimeo-square"></i></li>
                     <% end_if %>
                     <% if $SiteConfig.YouTubeLink %>
-                        <li><a href="$SiteConfig.YouTubeLink" target="_blank" class="footer__youtube" itemprop="sameAs"><i class="fab fa-youtube-square"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.YouTubeLink" target="_blank" class="footer__youtube" itemprop="sameAs"><i class="fab fa-youtube-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.InstagramLink %>
-                        <li><a href="$SiteConfig.InstagramLink" target="_blank" class="footer__instagram" itemprop="sameAs"><i class="fab fa-instagram-square"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.InstagramLink" target="_blank" class="footer__instagram" itemprop="sameAs"><i class="fab fa-instagram-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.LinkedInLink %>
-                        <li><a href="$SiteConfig.LinkedInLink" target="_blank" class="footer__linkedin" itemprop="sameAs"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.LinkedInLink" target="_blank" class="footer__linkedin" itemprop="sameAs"><i class="fab fa-linkedin"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.PinterestLink %>
-                        <li><a href="$SiteConfig.PinterestLink" target="_blank" class="footer__pinterest" itemprop="sameAs"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.PinterestLink" target="_blank" class="footer__pinterest" itemprop="sameAs"><i class="fab fa-pinterest-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.FlickrLink %>
-                        <li><a href="$SiteConfig.FlickrLink" target="_blank" class="footer__flickr" itemprop="sameAs"><i class="fab fa-flickr"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.FlickrLink" target="_blank" class="footer__flickr" itemprop="sameAs"><i class="fab fa-flickr"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.Github %>
-                        <li><a href="$SiteConfig.Github" target="_blank" class="footer__github" itemprop="sameAs"><i class="fab fa-github-square"></i></a></li>
+                        <li class="m-2"><a href="$SiteConfig.Github" target="_blank" class="footer__github" itemprop="sameAs"><i class="fab fa-github-square"></i></a></li>
                     <% end_if %>
                     <% if $SiteConfig.Snapchat %>
-                        <li><a href="https://www.snapchat.com/add/$SiteConfig.Snapchat" target="_blank" class="footer__snapchat" itemprop="sameAs"><i class="fab fa-snapchat-square"></i></a></li>
+                        <li class="m-2"><a href="https://www.snapchat.com/add/$SiteConfig.Snapchat" target="_blank" class="footer__snapchat" itemprop="sameAs"><i class="fab fa-snapchat-square"></i></a></li>
                     <% end_if %>
                 </ul>
                 <% if $SiteConfig.Disclaimer %>

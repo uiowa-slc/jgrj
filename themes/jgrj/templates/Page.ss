@@ -19,6 +19,8 @@
 		<!-- Disable tap highlight on IE -->
 		<meta name="msapplication-tap-highlight" content="no">
 
+		<% include OpenGraph %>
+
 		<!-- Web Application Manifest -->
 		<link rel="manifest" href="$resourceURL('themes/jgrj/dist/favicons/manifest.json')">
 
