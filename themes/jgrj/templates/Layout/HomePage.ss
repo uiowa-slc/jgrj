@@ -89,32 +89,21 @@
     </div>
 </section>
 
-<div class="container">
+<div class="container py-4 py-md-6">
     <div class="row">
-        <div class=" col-sm px-lg-0 content-container" role="main">
-
-
-
-
-            <%-- <h2>Latest Issue</h2>
-            <% with $LatestIssue %>
-                <% include IssueCard %>
-            <% end_with %> --%>
-
-            <%-- <article>
-                <h1>$Title</h1>
-                <div class="content">$Content</div>
-            </article> --%>
-            $Form
-            $PageComments
-
-            <%-- <h2>Latest Posts</h2>
-            <% loop $BlogPosts.Limit(3) %>
-                <% include SilverStripe\\Blog\\PostSummary %>
-            <% end_loop %> --%>
-
-
-
+        <div class="col-lg-6">
+            <!-- Twitter Feed -->
+            <% if $SiteConfig.TwitterLink %>
+                <a class="twitter-timeline" data-height="600" href="$SiteConfig.TwitterLink?ref_src=twsrc%5Etfw">Tweets by GendrRaceJustce</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <% end_if %>
+        </div>
+        <div class="col-lg-6">
+            <!-- Facebook Feed -->
+            <% if $SiteConfig.FacebookLink %>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+                <div class="fb-page" data-href="$SiteConfig.FacebookLink" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="$SiteConfig.FacebookLink" class="fb-xfbml-parse-ignore"><a href="$SiteConfig.FacebookLink">Journal of Gender, Race &amp; Justice</a></blockquote></div>
+            <% end_if %>
         </div>
     </div>
 </div>
