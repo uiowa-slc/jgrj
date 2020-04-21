@@ -14,10 +14,10 @@
                 <ul class="navbar-nav ml-auto">
                     <% loop $Menu(1) %>
                         <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %><% if Children && ClassName != 'IssueHolder' %> dropdown<% end_if %>">
-                            <a class="nav-link<% if Children && ClassName != 'IssueHolder' %> dropdown-toggle<% end_if %>" href="$Link"  <% if Children && ClassName != 'IssueHolder' %> id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %><% if ClassName = 'SilverStripe\CMS\Model\RedirectorPage' %> target='_blank'<% end_if %> >$MenuTitle.XML</a>
+                            <a class="nav-link<% if Children && ClassName != 'IssueHolder' %> dropdown-toggle<% end_if %>" href="$Link"  <% if Children && ClassName != 'IssueHolder' %> id="navbarDropdown$Pos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %><% if ClassName = 'SilverStripe\CMS\Model\RedirectorPage' %> target='_blank'<% end_if %> >$MenuTitle.XML</a>
 
                             <% if Children && ClassName != 'IssueHolder' %>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown$Pos">
                                     <% loop Children %>
 
                                             <a class="dropdown-item" href="$Link" <% if ClassName = "SilverStripe\CMS\Model\RedirectorPage" %> target="_blank"<% end_if %>>$MenuTitle</a>
