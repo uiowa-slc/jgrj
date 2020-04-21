@@ -25,32 +25,10 @@
                         <% end_if %>
 
 					<% end_if %>
-
-					<h4>$Position</h4>
-					<ul>
-						<% if $EmailAddress %><li><strong>Email:</strong> <a href="mailto:$EmailAddress">$EmailAddress</a></li><% end_if %>
-						<% if $Phone %><li><strong>Phone:</strong> $Phone</li><% end_if %>
-						<% if $DepartmentName %>
-							<li>
-								<% if $DepartmentURL %>
-									<a href="$DepartmentURL" target="_blank">Department website</a>
-								<% else %>
-									$DepartmentName
-								<% end_if %>
-							</li>
-						<% end_if %>
-						<% if $OtherWebsiteLink %>
-							<li><a href="$OtherWebsiteLink" target="_blank">
-								<% if $OtherWebsiteLabel %>
-									$OtherWebsiteLabel
-								<% else %>
-									Website
-								<% end_if %>
-							</a></li>
-						<% end_if %>
-					</ul>
 				</div>
+
 				$Content
+				
 		</article>
 		<% if $Menu(2) %>
 			<% include SideBar %>
