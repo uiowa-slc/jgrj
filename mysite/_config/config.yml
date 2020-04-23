@@ -21,6 +21,7 @@ VersionTruncator:
   delete_old_page_types: false
   vacuum_tables: false
 SilverStripe\View\SSViewer:
+  rewrite_hash_links: false
   themes:
     - '$public'
     - 'jgrj'
