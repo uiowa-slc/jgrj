@@ -32,12 +32,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <h2 class="display-4">$SectionOneTitle</h2>
+                <% if $SectionOneTitle %><h2 class="display-4">$SectionOneTitle</h2><% end_if %>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-5 offset-lg-5">
-                <div class="mt-5">$SectionOneContent</div>
+                <% if $SectionOneContent %><div class="mt-5">$SectionOneContent</div><% end_if %>
             </div>
         </div>
         <div class="row">
@@ -51,11 +51,33 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <h2 class="my-4">$SectionTwoTitle</h2>
-
+                <% if $SectionTwoTitle %><h2 class="my-4">$SectionTwoTitle</h2><% end_if %>
+                <% if $SectionTwoContent %>$SectionTwoContent<% end_if %>
             </div>
             <div class="col-lg-5 offset-lg-1 my-4">
-                $SectionTwoContent
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link active" id="facebook-tab" data-toggle="tab" href="#facebook" role="tab" aria-controls="facebook" aria-selected="true">Facebook</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link " id="twitter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="false">Twitter</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="facebook" role="tabpanel" aria-labelledby="facebook-tab">
+                        <!-- Facebook Feed -->
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+                        <div class="fb-page" data-href="$SiteConfig.FacebookLink" data-tabs="timeline" data-width="470" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="$SiteConfig.FacebookLink" class="fb-xfbml-parse-ignore"><a href="$SiteConfig.FacebookLink">Journal of Gender, Race &amp; Justice</a></blockquote></div>
+                    </div>
+                    <div class="tab-pane fade " id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
+                        <!-- Twitter Feed -->
+                        <a class="twitter-timeline" data-height="350" data-theme="dark" data-chrome="nofooter noborders noheader transparent" href="https://twitter.com/GendrRaceJustce?ref_src=twsrc%5Etfw">Tweets by GendrRaceJustce</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    
+                    
+                </div>
+                
             </div>
         </div>
     </div>
@@ -66,7 +88,7 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-4 ">
-                <h3 class="display-4 small-caps">Alumni Spotlight</h3>
+                <h3 class="h1 small-caps">Alumni Spotlight</h3>
                 <% with $Page(alumni) %>
                     <% loop $Children.Limit(1) %>
                         <br />
@@ -88,23 +110,4 @@
         </div>
     </div>
 </section>
-
-<div class="container py-4 py-md-6">
-    <div class="row">
-        <div class="col-lg-6">
-            <!-- Twitter Feed -->
-            <% if $SiteConfig.TwitterLink %>
-                <a class="twitter-timeline" data-height="600" href="$SiteConfig.TwitterLink?ref_src=twsrc%5Etfw">Tweets by GendrRaceJustce</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <% end_if %>
-        </div>
-        <div class="col-lg-6">
-            <!-- Facebook Feed -->
-            <% if $SiteConfig.FacebookLink %>
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
-                <div class="fb-page" data-href="$SiteConfig.FacebookLink" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="$SiteConfig.FacebookLink" class="fb-xfbml-parse-ignore"><a href="$SiteConfig.FacebookLink">Journal of Gender, Race &amp; Justice</a></blockquote></div>
-            <% end_if %>
-        </div>
-    </div>
-</div>
 

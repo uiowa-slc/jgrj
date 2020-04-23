@@ -17,7 +17,7 @@
 	padding-right: 0;
 }
 .navbar .nav-link {
-	font-size: 14px;
+	font-size: $font-size-base * .875;
 	text-transform: uppercase;
 }
 .navbar-expand-lg .navbar-nav .nav-link {

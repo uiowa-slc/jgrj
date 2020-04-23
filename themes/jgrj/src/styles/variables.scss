@@ -8,15 +8,25 @@ $blue: #0071EB;
 $gold: #ffcd00;
 $highlight: $gold;
 
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
 
 $body-bg: #f8f6f3;
 $body-color: #343a40;
 $text-muted: #687178;
+
 // Grid breakpoints
-//
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -27,16 +37,13 @@ $grid-breakpoints: (
 
 
 // Grid containers
-//
 // Define the maximum width of `.container` for different screen sizes.
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1200px
 );
-
 
 // Fonts
 $enable-responsive-font-sizes: true;
@@ -48,6 +55,8 @@ $headings-font-weight: 400;
 $line-height-base: 1.6;
 $headings-line-height: 1.3;
 $lead-font-size: $font-size-base * 1.35;
+
+$display4-size: 3rem;
 
 // Jumbotron
 $jumbotron-padding: 6rem;
@@ -64,7 +73,21 @@ $spacers: (
   10: ($spacer * 15)
 );
 
+// Blockquote
+$blockquote-font-size:  $font-size-base;
+
+// Navbar
 $navbar-light-color: rgba(#000, .6);
+$navbar-brand-font-size: $font-size-base * 1.5;
+
+// Nav Tabs
+$nav-tabs-border-color:             $gray-700;
+$nav-tabs-border-width:             0;
+$nav-tabs-border-radius:            0;
+$nav-tabs-link-hover-border-color:  $gray-700 $gray-700 $nav-tabs-border-color;
+$nav-tabs-link-active-color:        $gray-700;
+$nav-tabs-link-active-bg:           #fff;
+$nav-tabs-link-active-border-color: $gray-700 $gray-700 $nav-tabs-link-active-bg;
 
 
 //BigfootJS Settings:
