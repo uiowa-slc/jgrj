@@ -79,7 +79,7 @@ img {
 	border: 1px solid $gray-700;
 	border-top: none;
 	&>.active {
-		overflow: scroll;
+		overflow: auto;
 	}
 }
 
