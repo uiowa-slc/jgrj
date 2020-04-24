@@ -62,10 +62,10 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     
                     <li class="nav-item flex-fill">
-                        <a class="nav-link active" id="twitter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="true">Twitter</a>
+                        <a class="nav-link active small-caps" id="twitter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="true">Twitter</a>
                     </li>
                     <li class="nav-item flex-fill">
-                        <a class="nav-link " id="facebook-tab" data-toggle="tab" href="#facebook" role="tab" aria-controls="facebook" aria-selected="false">Facebook</a>
+                        <a class="nav-link small-caps" id="facebook-tab" data-toggle="tab" href="#facebook" role="tab" aria-controls="facebook" aria-selected="false">Facebook</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
