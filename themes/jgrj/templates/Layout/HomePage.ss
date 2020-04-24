@@ -32,12 +32,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <% if $SectionOneTitle %><h2 class="display-4">$SectionOneTitle</h2><% end_if %>
+                <% if $SectionOneTitle %>
+                    <h2 class="display-4 text-center">$SectionOneTitle</h2>
+                <% end_if %>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-5 offset-lg-5">
-                <% if $SectionOneContent %><div class="mt-5">$SectionOneContent</div><% end_if %>
+            <div class="col-lg-8 offset-lg-2">
+                <% if $SectionOneContent %>
+                    <div class="mt-4 text-center">$SectionOneContent</div>
+                <% end_if %>
             </div>
         </div>
         <div class="row">
@@ -56,28 +60,26 @@
             </div>
             <div class="col-lg-5 offset-lg-1 my-4">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    
                     <li class="nav-item flex-fill">
-                        <a class="nav-link active" id="facebook-tab" data-toggle="tab" href="#facebook" role="tab" aria-controls="facebook" aria-selected="true">Facebook</a>
+                        <a class="nav-link active" id="twitter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="true">Twitter</a>
                     </li>
                     <li class="nav-item flex-fill">
-                        <a class="nav-link " id="twitter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="false">Twitter</a>
+                        <a class="nav-link " id="facebook-tab" data-toggle="tab" href="#facebook" role="tab" aria-controls="facebook" aria-selected="false">Facebook</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="facebook" role="tabpanel" aria-labelledby="facebook-tab">
+                    <div class="tab-pane fadeshow active " id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
+                        <!-- Twitter Feed -->
+                        <a class="twitter-timeline" data-height="350" data-theme="dark" data-chrome="nofooter noborders noheader transparent" href="https://twitter.com/GendrRaceJustce?ref_src=twsrc%5Etfw">Tweets by GendrRaceJustce</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="tab-pane fade " id="facebook" role="tabpanel" aria-labelledby="facebook-tab">
                         <!-- Facebook Feed -->
                         <div id="fb-root"></div>
                         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
                         <div class="fb-page" data-href="$SiteConfig.FacebookLink" data-tabs="timeline" data-width="470" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="$SiteConfig.FacebookLink" class="fb-xfbml-parse-ignore"><a href="$SiteConfig.FacebookLink">Journal of Gender, Race &amp; Justice</a></blockquote></div>
                     </div>
-                    <div class="tab-pane fade " id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
-                        <!-- Twitter Feed -->
-                        <a class="twitter-timeline" data-height="350" data-theme="dark" data-chrome="nofooter noborders noheader transparent" href="https://twitter.com/GendrRaceJustce?ref_src=twsrc%5Etfw">Tweets by GendrRaceJustce</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                    
-                    
                 </div>
-                
             </div>
         </div>
     </div>

@@ -78,7 +78,11 @@ img {
 .tab-content {
 	border: 1px solid $gray-700;
 	border-top: none;
+	&>.active {
+		overflow: scroll;
+	}
 }
+
 
 
 
