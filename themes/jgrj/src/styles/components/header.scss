@@ -17,8 +17,11 @@
 	padding-right: 0;
 }
 .navbar .nav-link {
-	font-size: $font-size-base * .875;
+	font-size: $font-size-base * .775;
 	text-transform: uppercase;
+}
+.navbar-nav .dropdown-menu {
+	font-size: $font-size-base * .8;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
 	margin: 0 1px;
