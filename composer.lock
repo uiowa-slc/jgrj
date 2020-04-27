@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f400b32ca749341c69d9a89a79d93cb",
+    "content-hash": "69a5a2b3037b22787293a6712b999a23",
     "packages": [
+        {
+            "name": "axllent/silverstripe-version-truncator",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/axllent/silverstripe-version-truncator.git",
+                "reference": "af4fec31e597e5ea61654198c96482d7b5c54d0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/axllent/silverstripe-version-truncator/zipball/af4fec31e597e5ea61654198c96482d7b5c54d0a",
+                "reference": "af4fec31e597e5ea61654198c96482d7b5c54d0a",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "Axllent\\VersionTruncator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "The MIT License (MIT)"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Slooten",
+                    "homepage": "http://www.axllent.org/"
+                }
+            ],
+            "description": "Automatically delete old SiteTree page versions from SilverStripe",
+            "homepage": "https://github.com/axllent/silverstripe-version-truncator",
+            "keywords": [
+                "cms",
+                "silverstripe",
+                "sitetree"
+            ],
+            "time": "2017-10-16T22:56:37+00:00"
+        },
         {
             "name": "bramus/ansi-php",
             "version": "3.0.3",

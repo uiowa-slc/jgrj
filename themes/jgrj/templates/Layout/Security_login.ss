@@ -1,13 +1,18 @@
-<% if $Menu(2) || $SideBarView.Widgets %>
-	<% include SideBar %>
-<% end_if %>
+<% include Header %>
 
-<div class="col-sm content" role="main">
-	<div class="row justify-content-md-center">
-		<div class="col-md-8 col-lg-6">
-			$Content
+<main class="container" id="main-content">
+	<div class="row">
+		<div class="col-lg-8">
+			<article class="mt-5">
+				<h1>$Title</h1>
+				<div class="content">$Content</div>
+			</article>
 			$Form
+			$PageComments
+
 		</div>
+		<% if $Menu(2) %>
+			<% include SideBar %>
+		<% end_if %>
 	</div>
-	$PageComments
-</div>
+</main>
