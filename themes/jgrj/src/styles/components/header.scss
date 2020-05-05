@@ -1,5 +1,14 @@
-#BetterNavigator {
-	display: none;
+// #BetterNavigator {
+// 	display: none;
+// }
+/* Search Bar */
+input[type=text].uiowa-bar__search-input {
+	background: #fff2c6;
+	color: #333;
+	line-height: normal;
+	&:focus {
+		outline-color: #ffe488;
+	}
 }
 .header {
 	background-color: #fff;
