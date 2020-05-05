@@ -1,0 +1,23 @@
+.article-list {
+	&__item {
+		border-bottom: 1px solid $gray-400;
+	}
+	&__item:first-of-type {
+		border-top: 1px solid $gray-400;
+	}
+	&__img {
+		display: block;
+		@include media-breakpoint-up(sm) {
+			float: right;
+			margin-left: 15px;
+		}
+	}
+	&__type {
+        color: $gray-900;
+		text-transform: uppercase;
+		margin: 0 0 12px 0;
+		font-size: $font-size-sm;
+		font-style: italic;
+		letter-spacing: .05em;
+	}
+}
