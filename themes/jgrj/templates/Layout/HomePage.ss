@@ -17,7 +17,7 @@
             <div class="ab__a reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="100">
                 <h3>$BlockTwoTitle</h3>
                 <p>$BlockTwoContent</p>
-                <a href="$BlockTwoAssociatedPage.Link" class="btn btn-warning" aria-label="$BlockTwoTitle">Learn More</a>
+                <a href="$BlockTwoAssociatedPage.Link" class="btn btn-warning" aria-label="$BlockTwoTitle">Read  More</a>
             </div>
             <div class="ab__a reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="200">
                 <h3>$BlockThreeTitle</h3>
